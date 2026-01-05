@@ -12,7 +12,8 @@ tokio = { version = "1.48.0", features = ["macros"] }
 
 [workspace.dependencies.libcosmic]
 features = ["dbus-config", "multi-window", "winit", "tokio", "qr_code"]
-git = "https://github.com/pop-os/libcosmic"
+git = "https://github.com/isan-Ethen/libcosmic.git"
+branch = "update-iced"
 
 [workspace.dependencies.cosmic-config]
 git = "https://github.com/pop-os/libcosmic"
@@ -64,7 +65,8 @@ cosmic-client-toolkit = { git = "https://github.com/pop-os/cosmic-protocols//", 
 # cosmic-settings-config = { git = "https://github.com/pop-os/cosmic-settings-daemon//", branch = "input_nobuild" }
 
 # For development and testing purposes
-# [patch.'https://github.com/pop-os/libcosmic']
+[patch.'https://github.com/pop-os/libcosmic']
+libcosmic = { git = "https://github.com/isan-Ethen/libcosmic.git", branch = "update-iced" }
 # libcosmic = { path = "../libcosmic" }
 # cosmic-config = { path = "../libcosmic/cosmic-config" }
 # cosmic-theme = { path = "../libcosmic/cosmic-theme" }
