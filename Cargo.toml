@@ -78,3 +78,6 @@ libcosmic = { git = "https://github.com/isan-Ethen/libcosmic.git", branch = "upd
 
 [patch."https://github.com/smithay/client-toolkit.git"]
 sctk = { package = "smithay-client-toolkit", version = "0.20.0" }
+
+[patch."https://github.com/pop-os/winit.git"]
+winit = { git = "https://github.com/isan-Ethen/winit.git", branch = "libredox" }
